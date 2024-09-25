@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Brödbär - 3D Graph renderer in JAvascript</title>
+    <style>
+        #Container
+        {
+            position: absolute;
+            padding: 2rem 0 0 2rem;
+            top: 0;
+            left: 0;
+            font: normal 12pt Helvetica;
+        }
+        .ValueContainer
+        {
+            display: flex;
+        }
+        .Title::after
+        {
+            content: ' =';
+            padding-right: 0.5rem;
+        }
+        #FPS
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <div id="Mode" class="ValueContainer">
+            <div class="Title">Mode</div>
+            <div class="Value"></div>
+        </div>
+        <div id="Yaw" class="ValueContainer">
+            <div class="Title">Pitch</div>
+            <div class="Value"></div>
+        </div>
+        <div id="Pitch" class="ValueContainer">
+            <div class="Title">Yaw</div>
+            <div class="Value"></div>
+        </div>
+        <div id="Roll" class="ValueContainer">
+            <div class="Title">Roll</div>
+            <div class="Value"></div>
+        </div>
+        <div id="CamSpeed" class="ValueContainer">
+            <div class="Title">Camera Speed</div>
+            <div class="Value"></div>
+        </div>
+        <div id="TriangleCount" class="ValueContainer">
+            <div class="Title">Triangles</div>
+            <div class="Value"></div>
+        </div>
+    </div>
+    <div id="FPS"></div>
+</body>
+</html>
